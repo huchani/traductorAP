@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner de Tokens</title>
+    <link rel="stylesheet" href="../css/compilador.css">
+</head>
+<body>
+    <div class="titulo">AYMARA a PYTHON</div>
+    <center>
+        <div class="contenedor">
+            <div id="entradaLeft">
+                <textarea id="contenido" type="text" rows="5" class="entrada" spellcheck="false" 
+                placeholder="digite su código...">turka 'num1' = ullaña 'num1:' ;</textarea><br>
+                <input class="reader" type= "File" onchange="loadFile(this.files[0])" >
+            </div>
+
+            <div class="central">
+                <button class="btn-scanner" onclick="main()">SCANEAR</button><br>
+                <button class="btn-limpar" onclick="limpiar()">LIMPIAR</button>
+                <table id="tabela" class="tabela">
+                    <tr class="linha-topo">
+                        <td class="celula-topo">Token</td>
+                        <td class="celula-topo">Identificador</td>
+                        <td class="celula-topo">Tamaño</td>
+                        <td class="celula-topo">Posicion</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="salidaRight">
+                <textarea id="salida" type="text" rows="5" class="entrada" spellcheck="false" 
+                placeholder="Su codigo en python es:"></textarea>
+                <table id="tabela2" class="tabela" style="margin-left: 35px;">
+                        <br><button class="btn-descargar" onclick="download()"> DESCARGAR ARCHIVO </button>
+                    </tr>
+                </table>
+                </div>
+        </div>
+        <div class="extra"></div>
+
+    </center>
+    
+    <script src="descarga.js"></script>
+    <script src="main.js"></script>
+    <script src="scaner.js"></script>
+    <script src="parcer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+turka 'num1' = ullaña 'numero1:' ;
+turka 'num2' = ullaña 'numero2:' ;
+
+say 'num1' == 'num2' ;
+    quellqaña 'iguales' ;
+janisty 'num1' != 'num2' ;
+    quellqaña 'desiguales' ;
+jani ;
+    quellqaña 'ninguno' ;
